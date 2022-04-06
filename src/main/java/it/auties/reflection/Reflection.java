@@ -20,6 +20,10 @@ public class Reflection {
         return object;
     }
 
+    public static Unsafe unsafe() {
+        return unsafe;
+    }
+
     private static long findOffset() {
         try {
             var offsetField = AccessibleObject.class.getDeclaredField("override");
